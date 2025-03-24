@@ -46,3 +46,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
+      
+      - name: List _site Contents
+        run: ls -al ./_site
